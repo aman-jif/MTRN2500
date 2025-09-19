@@ -24,3 +24,19 @@
 //     mult();
 //     return 0;
 // }
+// Exercise 3
+#include <iostream>
+#include <cmath>
+
+void intrep() {
+    long answer;
+    int input;
+    std::cin >> input;
+    answer = pow(16, (2*input));
+    std::cout << answer <<'\n';
+}
+
+int main() {
+    intrep();
+    return 0;
+}

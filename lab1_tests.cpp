@@ -141,3 +141,32 @@
 // int main() {
 //     std::cout << isLeapYear(4000) << std::endl;
 // }
+// Exercise 8
+// #include <iostream>
+// #pragma once
+// #include <cmath>
+// #include <vector>
+// int sumPrimeNumbers(int n) {
+//     if (n <= 1) {
+//         return 0;
+//     };
+//     std::vector<bool> primeValidity(n+1, true);
+//     primeValidity[0] = primeValidity[1] = false;
+//     for (int i = 2; i<= sqrt(n); i++) {
+//         if (primeValidity[i]) {
+//             for (int j = i*i; j <= n; j += i) {
+//                 primeValidity[j] = false;
+//             }
+//         }
+//     }
+//     int primeSummation = 0;
+//     for (int i = 2; i <= n; i++) {
+//         if (primeValidity[i]) {
+//             primeSummation += i;
+//         }
+//     }
+//     return primeSummation;
+// }
+// int main() {
+//     std::cout << sumPrimeNumbers(19) << std::endl;
+// }

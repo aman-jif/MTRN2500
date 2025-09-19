@@ -125,3 +125,19 @@
 //     print(42.2);
 //     print('a');
 // }
+// Exercise 8
+// #include <iostream>
+// #pragma once
+
+// bool isLeapYear(int year) {
+//     if (year >= 1582 && year % 4 == 0 && year % 100 != 0) {
+//         return true;
+//     } else if (year % 100 == 0 && year % 400 == 0) {
+//         return true;
+//     };
+//     return false;
+// }
+
+// int main() {
+//     std::cout << isLeapYear(4000) << std::endl;
+// }

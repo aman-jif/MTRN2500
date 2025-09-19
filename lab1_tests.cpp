@@ -40,7 +40,7 @@
 //     intrep();
 //     return 0;
 // }
-// scope, Exercise 4
+// scope, Exercise 5
 // #include <iostream>
 
 // namespace Gibberish {
@@ -58,7 +58,7 @@
 // int main() {
 //     std::cout <<Gibberish::MoreGibberish::SomeMoreGibberish::x<< std::endl;
 // }
-// Exercise 5
+// Exercise 6
 // #include <iostream>
 // #include <vector>
 
@@ -85,7 +85,7 @@
 //     fizzbuzz();
 //     return 0;
 // }
-// Exercise 6
+// Exercise 7
 // #pragma once
 // #include <iostream> // This is part of main.cpp; included here for function testing
 // #include <limits>
@@ -114,7 +114,7 @@
 // int main () {
 //     std::cout << calculate (1.00, 0.00, '/') << std::endl;
 // }
-// Exercise 7
+// Exercise 8
 // #include <iostream> // Same as exercise 6
 // #pragma once
 // void print(char input) { std::cout << input << std::endl; };
@@ -125,7 +125,7 @@
 //     print(42.2);
 //     print('a');
 // }
-// Exercise 8
+// Exercise 9
 // #include <iostream>
 // #pragma once
 

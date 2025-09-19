@@ -58,3 +58,30 @@
 // int main() {
 //     std::cout <<Gibberish::MoreGibberish::SomeMoreGibberish::x<< std::endl;
 // }
+// Exercise 5
+// #include <iostream>
+// #include <vector>
+
+// void fizzbuzz() {
+//     const std::vector<int> divisors {3, 5};
+//     const std::vector<std::string> words {"Fizz", "Buzz"};
+//     for (int i{1}; i <= 100; ++i) {
+//             bool printed{false};
+//             for (std::size_t j{0}; j<divisors.size(); j++) {
+//                 if (i%divisors[j] == 0) {
+//                     std::cout << words[j];
+//                     printed = true;
+//                 }
+//             }
+//         if (!printed) {
+//             std::cout << i;
+//         }
+//         std::cout << std::endl;
+        
+//     }
+// }
+
+// int main () {
+//     fizzbuzz();
+//     return 0;
+// }

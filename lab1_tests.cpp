@@ -85,3 +85,32 @@
 //     fizzbuzz();
 //     return 0;
 // }
+// Exercise 6
+// #pragma once
+// #include <iostream> // This is part of main.cpp; included here for function testing
+// #include <limits>
+
+// double calculate(double lhs, double rhs, char op) {
+//     double solution;
+//     if (op == '+' || '0') {
+//         solution = lhs + rhs;
+//     };
+//     if (op == '-') {
+//         solution = lhs - rhs;
+//     };
+//     if (op == '*') {
+//         solution = lhs * rhs;
+//     };
+//     if (op == '/') {
+//         if (rhs == 0) {
+//             solution = std::numeric_limits<double>::quiet_NaN();
+//             return solution;
+//         };
+//         solution = lhs / rhs;
+//     };
+//     return solution;
+// };
+
+// int main () {
+//     std::cout << calculate (1.00, 0.00, '/') << std::endl;
+// }

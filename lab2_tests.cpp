@@ -2,44 +2,44 @@
 class EquiTriangle {
 public:
     EquiTriangle() = delete;
-    EquiTriangle(unsigned int sidelength);
+    EquiTriangle(long sidelength);
 
-    unsigned int perimeter() const;
-    float area() const;
+    long perimeter_var() const;
+    float area_var() const;
 
-    void setLength(unsigned int sidelength);
-    unsigned int printPerimeter();
-    float printArea();
+    void setLength(long sidelength);
+    long perimeter();
+    float area();
 
 private:
-    unsigned int mLength;
-    unsigned int mPerimeter;
+    long mLength;
+    long mPerimeter;
     float mArea;
 };
 
 #include <cmath>
 #include <iostream>
-
-EquiTriangle::EquiTriangle(unsigned int sidelength)
+EquiTriangle::EquiTriangle(long sidelength)
     : mLength{sidelength} {}
 
-unsigned int EquiTriangle::printPerimeter() {
+long EquiTriangle::perimeter() {
     this->mPerimeter = mLength * 3;
     return mPerimeter;
 }
 
-float EquiTriangle::printArea() {
+float EquiTriangle::area() {
     this->mArea = (sqrt(3)/4) * (mLength*mLength);
     return mArea;
 }
 
+// Use this main to test your code.
+#include <iostream>
 #include <iomanip>
-
-
 int main() {
     // This causes floating point numbers to be printed to 2 decimal places. Do not remove.
     std::cout << std::fixed << std::setprecision(2);
-    EquiTriangle triangle(1);
-    std::cout << "Perimeter: " << triangle.printPerimeter() << std::endl;
-    std::cout << "Area: " << triangle.printArea() << std::endl;
+
+    EquiTriangle triangle(1431655765);
+    std::cout << "Perimeter: " << triangle.perimeter() << std::endl;
+    std::cout << "Area: " << triangle.area() << std::endl;
 }
